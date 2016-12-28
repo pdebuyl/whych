@@ -1,7 +1,9 @@
 from setuptools import setup
 
+from which import __version__
+
 setup(name="python-which",
-      version="0.1-dev",
+      version=__version__,
       description="Find the location for a given module",
       author="Pierre de Buyl",
       author_email="pdebuyl at pdebuyl dot be",
