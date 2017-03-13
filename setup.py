@@ -10,5 +10,4 @@ setup(name="python-which",
       license="BSD",
       url="https://github.com/pdebuyl/python-which",
       packages=["which"],
-)
-
+      )

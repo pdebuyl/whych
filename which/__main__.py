@@ -20,4 +20,5 @@ if __name__ == '__main__':
                         option causes the module to load)""")
     args = parser.parse_args()
 
-    which(module=args.module, sys_path=args.sys_path, module_version=args.module_version)
+    which(module=args.module, sys_path=args.sys_path,
+          module_version=args.module_version)
