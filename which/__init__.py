@@ -6,7 +6,7 @@ from __future__ import print_function
 import imp
 import sys
 
-__version__ = '0.1-dev'
+__version__ = '0.2-dev'
 
 def which(module, sys_path=False, module_version=False):
     print("Python executable:", sys.executable)
