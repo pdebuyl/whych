@@ -2,10 +2,9 @@
 A module to find the location of other modules. The main use is to diagnose
 installation problems.
 """
-from __future__ import print_function
+from . import which
 
 if __name__ == '__main__':
-    import imp
     import argparse
     import sys
     import os.path
@@ -21,21 +20,4 @@ if __name__ == '__main__':
                         option causes the module to load)""")
     args = parser.parse_args()
 
-    print("Python executable:", sys.executable)
-    if args.sys_path:
-        print("""System path:""")
-        print(sys.path)
-    try:
-        file, pathname, description = imp.find_module(args.module)
-    except:
-        print("""Module "{}" not found""".format(args.module))
-        sys.exit(0)
-
-    print("""Module "{}" found at location: {}""".format(args.module,
-                                                         pathname))
-    if args.module_version:
-        module = imp.load_module(args.module, file, pathname, description)
-        if hasattr(module, '__version__'):
-            print("""{} version: {}""".format(args.module, module.__version__))
-        else:
-            print('Module has no __version__ information')
+    which(module=args.module, sys_path=args.sys_path, module_version=args.module_version)
