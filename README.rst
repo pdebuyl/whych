@@ -10,7 +10,7 @@ executable, so that the Python interpreter that is used is obvious.
 Examples
 --------
 
-From the command-line:
+From the command-line::
 
     $ python3 -m whych collections
     Python executable: /usr/bin/python3
@@ -22,7 +22,7 @@ From the command-line:
     Module "numpy" found at location: /usr/lib/python2.7/dist-packages/numpy
     numpy version: 1.12.0b1
 
-From an interpreter
+From an interpreter::
 
     >>> import whych
     >>> whych.whych('pip')
