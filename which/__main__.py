@@ -2,7 +2,7 @@
 A module to find the location of other modules. The main use is to diagnose
 installation problems.
 """
-from . import which
+from . import whych
 
 if __name__ == '__main__':
     import argparse
@@ -20,5 +20,5 @@ if __name__ == '__main__':
                         option causes the module to load)""")
     args = parser.parse_args()
 
-    which(module=args.module, sys_path=args.sys_path,
+    whych(module=args.module, sys_path=args.sys_path,
           module_version=args.module_version)

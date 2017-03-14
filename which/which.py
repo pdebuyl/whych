@@ -3,7 +3,7 @@ import imp
 import sys
 
 
-def which(module, sys_path=False, module_version=False):
+def whych(module, sys_path=False, module_version=False):
     print("Python executable:", sys.executable)
     if sys_path:
         print("System path:", sys.path)
