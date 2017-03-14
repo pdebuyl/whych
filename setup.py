@@ -7,7 +7,7 @@ with open('README.rst', 'r') as f:
 
 setup(name="whych",
       version=__version__,
-      description="Find the location for a given module",
+      description="A module to find modules",
       long_description=readme,
       author="Pierre de Buyl",
       author_email="pdebuyl@pdebuyl.be",
