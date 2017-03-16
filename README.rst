@@ -32,5 +32,5 @@ From an interpreter::
 Installation
 ------------
 
-    pip install git+https://github.com/pdebuyl/whych
+    pip install whych
 
